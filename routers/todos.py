@@ -91,3 +91,4 @@ async def delete_todo(user: user_dependancy, db: db_dependancy,
     else:
         db.query(Todos).filter(Todos.id == todo_id).delete()
         db.commit()
+
